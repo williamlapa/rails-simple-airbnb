@@ -1,7 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Flats</h1>
-
 <table>
   <thead>
     <tr>
@@ -30,6 +28,33 @@
   </tbody>
 </table>
 
-<br>
+<%# CONTAINER DAS INFORMACOES %>
+
+<div class="row">
+      <div class="col-4">
+        <div class="flat-card">
+          <div class="flat-card-image" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200')"></div>
+          <div class="flat-card-content">
+            <div class="flat-card-title">
+              <h4>Light &amp; Spacious Garden Flat London</h4>
+            </div>
+            <p>10 Clifton Gardens London W9 1DT</p>
+            <div class="flex">
+              <div class="flex">
+                <i class="material-icons mr-2">people</i><span>3</span>
+              </div>
+              <div class="flex ml-3">
+                <i class="material-icons mr-2">euro_symbol</i> 75
+              </div>
+            </div>
+          </div>
+          <div class="flat-card-actions">
+            <a href="/flats/4074">More info</a>
+            <a class="ml-3 text-warning" href="/flats/4074/edit">Edit</a>
+            <a data-confirm="Are you sure?" class="ml-3 text-danger" rel="nofollow" data-method="delete" href="/flats/4074">Remove</a>
+          </div>
+        </div>
+      </div>
+  </div>
 
 <%= link_to 'New flat', new_flat_path %>
